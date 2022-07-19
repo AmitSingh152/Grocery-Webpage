@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="/assets/icon.png" width="30" height="30"  class="d-inline-block align-top" style="padding-right: 7.5px;" alt="">Grocery App</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/aboutus">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contactus">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" routerLink="/register" style="margin-right: 5px;"class="btn btn-secondary">Register</button>
+    <button type="button" routerLink="/login" style="margin-right: 5px;" class="btn btn-secondary">Login</button>
+    <button type="button" (click)="onLogoutClick()" class="btn btn-secondary">Logout</button>
+    </div>
+</nav>
